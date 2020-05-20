@@ -5,11 +5,15 @@ git pull origin master
 curl -o-   https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh    | bash
 
 . ~/.nvm/nvm.sh
+sudo apt install nodejs -y
 
-nvm install
+sudo apt install build-essential -y
 
- npm install -g nodemon pm2
+#nvm install
 
-pm2 restart ecosystem.config.js
+sudo npm install
+
+sudo npm start
+#pm2 restart ecosystem.config.js
 exit
 EOF
